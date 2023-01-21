@@ -41,11 +41,12 @@ const List = () => {
 
     const addCard = (newCard, columnId) => {
         const columnsUpdated = columns.map(column => {
-            if(column.id === columnId)
+            if (column.id === columnId) {
                 return { ...column, cards: [...column.cards, { id: shortid(), title: newCard.title }]}
-            else
-                return column
-        })
+            } else {
+                return column;
+            }
+        });
         setColumns(columnsUpdated);
     };
 

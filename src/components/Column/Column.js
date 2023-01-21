@@ -3,7 +3,6 @@ import Card from '../Card/Card';
 import CardForm from '../CardForm/CardForm';
 
 const Column = props => {
-    const fafaClass = 'icon fa fa-' + props.icon;
     
     return (
         <article className={styles.column}>
